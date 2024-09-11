@@ -1,0 +1,19 @@
+
+<div class="signup">
+        <form id="login-form" method="POST" action="/login">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-input" id="username" name="username" placeholder="Enter username"><br>
+                <label for="password">Password</label>
+                <input type="password" class="form-input" id="password" name="password" placeholder="Enter password">
+                <div class="form-group">
+                    <button type="submit" class="button">Sign in</button>
+                </div>
+                {{#if status}}
+                <p></p>
+                {{else}}
+                    <p>{{message}}</p>
+                {{/if}}
+            </div>
+        </form>
+</div>
